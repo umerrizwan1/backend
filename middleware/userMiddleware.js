@@ -21,6 +21,7 @@ const authenticateWithToken = (req, res, next) => {
     res.status(500).json("Internal server Error");
   }
 };
+
 const checkRole = (role) => {
   return (req, res, next) => {
     try {
